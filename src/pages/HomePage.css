@@ -1,0 +1,109 @@
+
+.introduce{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+.introducetype{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 45%;
+    @media (max-width: 768px) {
+        padding-top: 40px;
+      }
+    
+    
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 12%;
+  }
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .about-card {
+    background: var(--bg-color-variant);
+    border: 3px solid white;
+    border-radius: 1rem;
+    padding: 1.0rem;
+    text-align: center;
+    transition: var(--transition);
+    background-color: #f8eddf;
+  }
+  
+  .about-card:hover {
+    background: transparent;
+    border-color: var(--primary-color-variant);
+    cursor: default;
+    background-color: #f8eddf;
+  }
+  
+  .about-icon {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rm;
+  }
+  .about-card h5 {
+    font-size: 1.00rem;
+  }
+  .about-card small {
+    font-size: 1.0rem;
+    color: var(--color-light);
+  }
+  
+  .about-content p {
+    margin: 1rem 0 2.6rem;
+    color: var(--color-light);
+  }
+  
+  /* ============ Media Query ============== */
+  /* Medium Devices (1024px) */
+  @media screen and (max-width: 64em) {
+    .about-container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .about-me {
+      width: 50%;
+      margin: 1rem auto 4rem;
+    }
+    .about-content p {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  /* Small Devices (600px) */
+  @media screen and (max-width: 37.5em) {
+    .about-me {
+      width: 65%;
+      margin: 0 auto 3rem;
+    }
+    .about-cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.95rem;
+    }
+    .about-content {
+        text-align: center;
+    }
+    .about-content p {
+        margin: 1rem 0;
+    }
+  }
+  
+  .homeul{
+    list-style: none;
+    padding:0px;
+    gap: 10px;
+  }
+  .homeli{
+    margin-top: 10px;
+  }

@@ -1,0 +1,18 @@
+.AboutPagebody{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 100px;
+}
+.stack_container{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.stack_title{
+    font-size: 30px;
+    width: 300px;
+}
+.stack_list{
+    margin-top: 8px;
+}

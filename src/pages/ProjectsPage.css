@@ -1,0 +1,46 @@
+.projectbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardbody {
+    height: 80vh;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    width: 99vw;
+  }
+  
+  .group {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .item {
+    width: 12vw;
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    margin: 1vw;
+    border-radius: 3vw;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .text-0{
+    display: none;
+  }
+  .text-1{
+    display: none;
+  }
+  .text-2{
+    display: none;
+  }
+  .text-3{
+    display: none;
+  }
+  .text-4{
+    display: none;
+  }

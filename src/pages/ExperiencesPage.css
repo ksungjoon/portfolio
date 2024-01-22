@@ -1,0 +1,121 @@
+.centerbody{
+    display: flex;
+    justify-content: center;
+}
+.ExperiencesPagebody{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+/* Container */
+.Container {
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  /* TimelineList */
+  .TimelineList {
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid dimgray;
+    list-style: none;
+    border-radius: 20px;
+  }
+  
+  /* TimelineItemContainer */
+  .TimelineItemContainer {
+    list-style: none;
+  }
+  
+  /* Date */
+  .Date {
+    padding: 4px 12px;
+    background: rgba(105, 105, 105, 0.6);
+    color: gray;
+    border-radius: 16px;
+  }
+  
+  /* Title */
+  .TimelineTitle {
+    margin: 16px 0 0;
+    padding: 0;
+    color: dimgray;
+    opacity: 0.8;
+  }
+  
+  /* Contents */
+  .TimelineContents {
+    margin: 8px 0 0;
+    color: dimgray;
+  }
+  
+  /* animate keyframes */
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* TimelineItem */
+  .TimelineItem {
+    position: relative;
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+  
+  .TimelineItem:hover {
+    background: rgba(105, 105, 105, 0.2);
+  }
+  
+  .TimelineItem:hover .Date {
+    background: seagreen;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .TimelineItem:hover .TimelineTitle {
+    color: lime;
+    font-weight: bold;
+  }
+  
+  .TimelineItem:hover .TimelineContents {
+    color: white;
+  }
+  
+  .TimelineItem::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -7px;
+    width: 12px;
+    height: 12px;
+    background: dimgray;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+  }
+  
+  .TimelineItem::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: lime;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
+    opacity: 0;
+  }
+  
+  .TimelineItem:hover::after {
+    animation: animate 0.5s linear infinite;
+  }
+  
