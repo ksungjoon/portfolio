@@ -26,8 +26,7 @@ const Aourora = () => {
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
-            <a href="https://drive.google.com/file/d/10tspRfPEKhmzy1KJgQCRTEFDJT69SvtZ/view"><div>영상 URL</div></a>
-            <a href="https://github.com/ksungjoon/Eoulim2.0"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/Aurora"><div>Github URL(자세한 내용)</div></a>
             <div className='summary'>
                 사용자가 좋아하는 영화와 시청한 영화를 기반으로 영화를 추천해주는 영화 추천 플랫폼
             </div>

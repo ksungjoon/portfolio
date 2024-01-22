@@ -7,6 +7,10 @@ import img1 from '../../assets/eoulimv2/eoulimv2img1.png';
 import img2 from '../../assets/eoulimv2/eoulimv2img2.png';
 import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
 import mainimg from '../../assets/moadiary/moadiarymain.png';
+import award from '../../assets/moadiary/award.jpg';
+import team from '../../assets/moadiary/team.jpg';
+import completion from '../../assets/moadiary/completion.jpg'
+import shinhan from '../../assets/moadiary/shinhan.jpg'
 
 const MoadiaryContent = () => {
     const settings = {
@@ -26,13 +30,28 @@ const MoadiaryContent = () => {
                 <img src={mainimg} className='mainimg' />
             </div>
             
-            <a href="https://github.com/ksungjoon/TAESAN"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/IJoah"><div>Github URL(자세한 내용)</div></a>
             <div className='summary'>
                 핀테크 연결과 확장을 주제로 용돈기입과 일기를 한번에 작성할 수 있는 아이 친화적인 UI를 제공하는 웹앱 애플리케이션
             </div>
             <div className='subtitle'>🏆 수상</div>
             <hr />
             <div>신한 해커톤 프로젝트 우수상</div>
+            <div className='center'>
+                <div className='slide'>
+                    <Slider {...settings}>
+
+                            <img src={award} className='imgdiv'/>
+                       
+                            <img src={team} className='imgdiv'/>
+
+                            <img src={completion} className='imgdiv'/>
+
+                            <img src={shinhan} className='imgdiv'/> 
+                        
+                    </Slider>
+                </div>
+            </div>
             <div className='subtitle'>💻 서비스 화면</div>
             <hr />
             <div className='center'>

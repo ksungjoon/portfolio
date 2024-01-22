@@ -80,8 +80,9 @@
     height: 120px;
   }
   .title {
-    width: 170%;
+    width: 120%;
     transition: transform 0.5s;
+    margin-bottom: 5px;
   }
   .card:hover .title {
     transform: translate3d(0%, -50px, 100px);

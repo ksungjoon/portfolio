@@ -5,6 +5,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc"; 
 import HomeImage from '../components/HomeImage';
+import CV from '../assets/portfolio.pdf';
 
 const HomePage = () => {
   return (
@@ -12,16 +13,18 @@ const HomePage = () => {
       <div className='introduce'>
         <HomeImage/>
         <div className='introducetype'>
-          <div>HI! HOW ARE YOU?</div>
-          <div>I'M</div>
-          <Typewriter
-            options={{
-              strings: ['SUNGJOON KIM', 'FRONT DEVELOPER','ANDROID DEVELOPER'],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-          <p>안녕하세요, 저는 김성준입니다. 😁</p>
+          <div className='maintext'>HI! HOW ARE YOU?</div>
+          <div className='maintext'>I'M</div>
+          <div className='wirtetext'>
+            <Typewriter
+              options={{
+                strings: ['SUNGJOON KIM', 'FRONT DEVELOPER','ANDROID DEVELOPER'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+          <p className='subtext'>안녕하세요, 저는 김성준입니다. 😁</p>
           <div className="about-content">
             <div className="about-cards">
               <article className="about-card">
@@ -45,25 +48,31 @@ const HomePage = () => {
               사용자의 피드백을 적극적으로 수용하고 반영하여, 언제나 높은 만족도를 유지하며 웹 경험을 향상시키는 것을 목표로 하고 있습니다.
             </p>
             <div>PERSONAL INFOS</div>
-            <ul className='homeul'>
-              <li className='homeli'>
-                <span>Name : </span>
-                김성준
-              </li>
-              <li className='homeli'>
-                <span>Age : </span>
-                1997.06
-              </li>
-              <li className='homeli'>
-                <span>Phone : </span>
-                010.3582.8505
-              </li>
-              <li className='homeli'>
-                <span>Email : </span>
-                gkxm0443@naver.com
-              </li>
-            </ul>
-            
+            <div className='displayinfo'>
+              <div className='personalinfocard'>
+                <ul className='homeul'>
+                  <li className='homeli'>
+                    <span>Name : </span>
+                    김성준
+                  </li>
+                  <li className='homeli'>
+                    <span>Age : </span>
+                    1997.06
+                  </li>
+                  <li className='homeli'>
+                    <span>Phone : </span>
+                    010.3582.8505
+                  </li>
+                  <li className='homeli'>
+                    <span>Email : </span>
+                    gkxm0443@naver.com
+                  </li>
+                </ul>
+              </div>
+              <a href={CV} download='sungjoon portfolio' className='btn'>
+                <button class="learn-more">포트폴리오PDF 다운</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,9 @@ import "slick-carousel/slick/slick-theme.css"
 import img1 from '../../assets/eoulimv2/eoulimv2img1.png';
 import img2 from '../../assets/eoulimv2/eoulimv2img2.png';
 import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
-import mainimg from '../../assets/eoulim/eoulimmain.png'
+import mainimg from '../../assets/eoulim/eoulimmain.png';
+import award from '../../assets/eoulim/award.jpg';
+import team from '../../assets/eoulim/team.JPG'
 
 const EoulimContent = () => {
     const settings = {
@@ -25,15 +27,27 @@ const EoulimContent = () => {
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
-            <a href="https://drive.google.com/file/d/10tspRfPEKhmzy1KJgQCRTEFDJT69SvtZ/view"><div>영상 URL</div></a>
-            <a href="https://github.com/ksungjoon/Eoulim2.0"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://drive.google.com/file/d/1WslZg69gb1SLhKtSn4ULfPDBd9H6jFJf/view"><div>영상 URL</div></a>
+            <a href="https://github.com/ksungjoon/Eoullim"><div>Github URL(자세한 내용)</div></a>
             <div className='summary'>
                 주변에서 또래 친구를 만나기 힘든 교외 지역 아이들을 위한 가이드가 이끄는 1:1 랜덤 화상 미팅 기능을 제공하는 웹 서비스
             </div>
             <div className='subtitle'>🏆 수상</div>
             <hr />
             <div>SSAFY 공통 프로젝트 (웹 기술) 우수상</div>
-            <div></div>
+            <div className='center'>
+                <div className='slide'>
+                    <Slider {...settings}>
+
+                            <img src={award} className='imgdiv'/>
+                       
+                      
+                            <img src={team} className='imgdiv'/>
+                        
+                        
+                    </Slider>
+                </div>
+            </div>
             <div className='subtitle'>💻 서비스 화면</div>
             <hr />
             <div className='center'>

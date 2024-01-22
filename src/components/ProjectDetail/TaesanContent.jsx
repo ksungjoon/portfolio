@@ -7,6 +7,8 @@ import img1 from '../../assets/eoulimv2/eoulimv2img1.png';
 import img2 from '../../assets/eoulimv2/eoulimv2img2.png';
 import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
 import mainimg from '../../assets/taesan/taesanmain.png';
+import team from '../../assets/taesan/team.jpg';
+import award from '../../assets/taesan/award.jpg'
 
 const TaesanContent = () => {
     const settings = {
@@ -32,13 +34,26 @@ const TaesanContent = () => {
             </div>
             <div className='subtitle'>🏆 수상</div>
             <hr />
-            <div>SSAFY 특화 프로젝트 (핀테크) 우수상</div>
+            <div>SSAFY 특화 프로젝트 (핀테크) 우수상 (1등)</div>
+            <div className='center'>
+                <div className='slide'>
+                    <Slider {...settings}>
+
+                            <img src={award} className='imgdiv'/>
+                       
+                      
+                            <img src={team} className='imgdiv'/>
+                        
+                        
+                    </Slider>
+                </div>
+            </div>
             <div className='subtitle'>💻 서비스 화면</div>
             <hr />
             <div className='center'>
                 <div className='slide'>
                     <Slider {...settings}>
-                        
+
                             <img src={img1} className='imgdiv'/>
                        
                       
