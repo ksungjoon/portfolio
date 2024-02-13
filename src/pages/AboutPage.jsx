@@ -7,11 +7,11 @@ const AboutPage = () => {
         <div className='AboutPagebody'>
             <div>
                 <h1>안녕하세요 김성준입니다.</h1>
-                <h4>새로운 기술을 배우고 경험하는 것을 즐깁니다.</h4>
-                <h4>한 번 시작하면 끝까지 파고드는 기질을 갖고 있습니다.</h4>
-                <h4>다양한 사람들을 만나고 소통하며 성장하는 것을 좋아합니다.</h4>
-                <h4>도전적인목표를 세우고 성취하는 것에 뿌듯함을 느낍니다.</h4>
-                <div>My SKill</div>
+                <h3>새로운 기술을 배우고 경험하는 것을 즐깁니다.</h3>
+                <h3>한 번 시작하면 끝까지 파고드는 기질을 갖고 있습니다.</h3>
+                <h3>다양한 사람들을 만나고 소통하며 성장하는 것을 좋아합니다.</h3>
+                <h3>도전적인목표를 세우고 성취하는 것에 뿌듯함을 느낍니다.</h3>
+                <div className='myskill'>My SKill</div>
                 <div className='stack_container'>
                     <div className='stack_title'>Frontend</div>
                     <div>

@@ -14,6 +14,10 @@
     perspective: 2500px;
     margin: 0 50px;
     margin-top: 130px;
+    @media (max-width: 768px) {
+      margin: 0;
+      margin-top: 130px;;
+    }
   }
   
   .cover-image {
@@ -100,4 +104,16 @@
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
   }
-  
+  .clickicon{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+
+  }
+  /* .HomeImagebody{
+    @media (max-width: 768px) {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+  } */
