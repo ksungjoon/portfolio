@@ -3,7 +3,7 @@ import './AboutImage.css'
 
 const AboutImage = () => {
     return (
-        <div>
+        <div className='cardcenter'>
             <div className="card">
                 <div className="content">
                     <h2 className="title">Kim Sung Joon</h2>

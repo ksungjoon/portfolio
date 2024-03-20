@@ -18,7 +18,10 @@
   font-family: var(--font-sans);
 }
 
-
+.cardcenter{
+  display: flex;
+  justify-content: center;
+}
 
 .card {
   position: relative;

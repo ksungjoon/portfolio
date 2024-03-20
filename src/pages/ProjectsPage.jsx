@@ -11,6 +11,7 @@ import TaesanContent from '../components/ProjectDetail/TaesanContent';
 import MoadiaryContent from '../components/ProjectDetail/MoadiaryContent';
 import EoulimContent from '../components/ProjectDetail/EoulimContent';
 import Aourora from '../components/ProjectDetail/Aourora';
+import { TbHandClick } from "react-icons/tb";
 
 const ProjectsPage = () => {
   const [visibleText, setVisibleText] = useState(null);
@@ -79,6 +80,20 @@ const ProjectsPage = () => {
           <div className="item" style={{ backgroundImage: `url(${aurora})` }}></div>
         </div>
       </div>
+      {visibleText === null ?  
+      <div class="clickcontainer">
+        <div className='clickmouse'>
+          <TbHandClick/>
+        </div>
+        <span class="clicktext">Click project</span>
+      </div>:
+      <div class="scrollcontainer">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="scrolltext">Scroll down</span>
+      </div>
+      }
       <div className={`text-${0}`} style={{ opacity: visibleText === 0 ? 1 : 0, display: visibleText === 0 ? 'block' : 'none' }}><Eoulim2Content/></div>
       <div className={`text-${1}`} style={{ opacity: visibleText === 1 ? 1 : 0, display: visibleText === 1 ? 'block' : 'none' }}><TaesanContent/></div>
       <div className={`text-${2}`} style={{ opacity: visibleText === 2 ? 1 : 0, display: visibleText === 2 ? 'block' : 'none' }}><MoadiaryContent/></div>

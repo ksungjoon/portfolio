@@ -9,6 +9,7 @@ import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
 import mainimg from '../../assets/eoulim/eoulimmain.png';
 import award from '../../assets/eoulim/award.jpg';
 import team from '../../assets/eoulim/team.JPG'
+import { FaGithub } from "react-icons/fa";
 
 const EoulimContent = () => {
     const settings = {
@@ -21,20 +22,26 @@ const EoulimContent = () => {
     return (
         <div className='project'>
             <div className='project_title'>어울림 V.1</div>
-            <div>2023.07~2023.08 (7주) </div>
-            <div>팀 프로젝트(BE 3, FE 3)</div>
-            <div>프론트엔드 개발</div>
+            <div className='subtitle'>2023.07~2023.08 (7주) </div>
+            <div className='subtitle'>팀 프로젝트(BE 3, FE 3)</div>
+            <div className='subtitle'>프론트엔드 개발</div>
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
-            <a href="https://drive.google.com/file/d/1WslZg69gb1SLhKtSn4ULfPDBd9H6jFJf/view"><div>영상 URL</div></a>
-            <a href="https://github.com/ksungjoon/Eoullim"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/Eoullim">
+                <div className='githublink'>    
+                    <FaGithub/>
+                    Github URL(자세한 내용)
+                </div>
+            </a>
             <div className='summary'>
                 주변에서 또래 친구를 만나기 힘든 교외 지역 아이들을 위한 가이드가 이끄는 1:1 랜덤 화상 미팅 기능을 제공하는 웹 서비스
             </div>
             <div className='subtitle'>🏆 수상</div>
             <hr />
-            <div>SSAFY 공통 프로젝트 (웹 기술) 우수상</div>
+            <div className='award'>
+                <div>SSAFY 공통 프로젝트 (웹 기술) 우수상</div>
+            </div>
             <div className='center'>
                 <div className='slide'>
                     <Slider {...settings}>
@@ -48,37 +55,25 @@ const EoulimContent = () => {
                     </Slider>
                 </div>
             </div>
-            <div className='subtitle'>💻 서비스 화면</div>
+            <div className='subtitle'>💻 기능 설명 영상 </div>
             <hr />
-            <div className='center'>
-                <div className='slide'>
-                    <Slider {...settings}>
-                        
-                            <img src={img1} className='imgdiv'/>
-                       
-                      
-                            <img src={img2} className='imgdiv'/>
-                        
-                        
-                            <img src={img3} className='imgdiv'/>
-                        
-                    </Slider>
+                <div class="video-wrap">
+                    <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/bligibbZrSw" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>
             <div className='subtitle'>🛠️ 개발 환경</div>
             <hr />
             <ul>
-                <li>ForntEnd</li>
+                <li className='devsetting'>ForntEnd</li>
                 <p>TypeScript, React.js, Recoil, Styled-Components, MUI, Three.js, Node.js</p>
-                <li>BackEnd</li>
+                <li className='devsetting'>BackEnd</li>
                 <p>Spring Boot, JPA, QueryDSL, Spring Security, Firebase, Openvidu</p>
-                <li>Mobile</li>
+                <li className='devsetting'>Mobile</li>
                 <p>Flutter, GetX, Webview</p>
-                <li>InfraStructor</li>
+                <li className='devsetting'>InfraStructor</li>
                 <p>AWS, Nginx, Docker, Jenkins</p>
-                <li>Authencation</li>
+                <li className='devsetting'>Authencation</li>
                 <p>JWT, Redis</p>
-                <li>Collaborate</li>
+                <li className='devsetting'>Collaborate</li>
                 <p>GitLab, Jira, Figma, Notion</p>
             </ul>
             <div className='subtitle'>💡 프로젝트 주요기능</div>

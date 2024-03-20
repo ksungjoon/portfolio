@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: column;
     width: 60%;
+    font-family: 'JalnanGothic';
+}
+.ExperiencesPagebody h1{
+  font-family: 'JalnanGothic';
 }
 /* Container */
 .Container {
@@ -82,12 +86,12 @@
   }
   
   .TimelineItem:hover .TimelineTitle {
-    color: lime;
+    color: green;
     font-weight: bold;
   }
   
   .TimelineItem:hover .TimelineContents {
-    color: white;
+    color: black;
   }
   
   .TimelineItem::before {

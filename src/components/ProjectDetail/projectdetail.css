@@ -1,8 +1,29 @@
 .project{
     width: 80vw;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+}
+.githublink{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.project a{
+    text-decoration: none;
+}
+.project a:visited{
+    color : blue;
+    text-decoration: none;
+}
+.project a:hover{
+    color : gray;
+    text-decoration: none;
 }
 .project_title{
-    font-size: 50px;
+    font-size: 57px;
+    font-family: 'KCC-Ganpan';
+    margin-bottom: 30px;
 }
 .summary{
     background-color: rgb(231, 253, 194);
@@ -11,7 +32,8 @@
     margin: 40px;
 }
 .subtitle{
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 .slide{
     width: 80%;
@@ -19,6 +41,15 @@
 .center{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+   
+}
+.award{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+   font-size: 30px;
 }
 .imgdiv{
     height: 40vw;
@@ -29,4 +60,22 @@
     object-fit: contain;
     border-radius: 20px;
     margin: 40px;
+}
+  .video-wrap {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position:relative; 
+    padding-bottom:56.25%; 
+    padding-top:30px; 
+    height:0; 
+    overflow:hidden;}
+  .video-wrap iframe,
+  .video-wrap object,
+  .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+.project li{
+    margin-top: 15px;
+}
+.devsetting{
+    font-size: 24px;
+    font-family: 'KCC-Ganpan';
 }

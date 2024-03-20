@@ -9,6 +9,7 @@ import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
 import mainimg from '../../assets/taesan/taesanmain.png';
 import team from '../../assets/taesan/team.jpg';
 import award from '../../assets/taesan/award.jpg'
+import { FaGithub } from "react-icons/fa";
 
 const TaesanContent = () => {
     const settings = {
@@ -21,14 +22,19 @@ const TaesanContent = () => {
     return (
         <div className='project'>
             <div className='project_title'>태산: 泰山</div>
-            <div>2023.8~2023.10 (7주) </div>
-            <div>팀 프로젝트(BE 3, FE 3)</div>
-            <div>프론트엔드 개발</div>
+            <div className='subtitle'>2023.8~2023.10 (7주) </div>
+            <div className='subtitle'>팀 프로젝트(BE 3, FE 3)</div>
+            <div className='subtitle'>프론트엔드 개발</div>
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
             
-            <a href="https://github.com/ksungjoon/TAESAN"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/TAESAN">
+                <div className='githublink'>    
+                    <FaGithub/>
+                    Github URL(자세한 내용)
+                </div>
+            </a>
             <div className='summary'>
                 사용자의 소비 습관 관리를 통해 잘못된 소비 습관을 개선하고 소액으로 저축을 진행하여 부담 없이 꾸준히 저축할 수 있는 플랫폼
             </div>
@@ -48,39 +54,27 @@ const TaesanContent = () => {
                     </Slider>
                 </div>
             </div>
-            <div className='subtitle'>💻 서비스 화면</div>
+            <div className='subtitle'>💻 기능 설명 영상 </div>
             <hr />
-            <div className='center'>
-                <div className='slide'>
-                    <Slider {...settings}>
-
-                            <img src={img1} className='imgdiv'/>
-                       
-                      
-                            <img src={img2} className='imgdiv'/>
-                        
-                        
-                            <img src={img3} className='imgdiv'/>
-                        
-                    </Slider>
-                </div>
+            <div class="video-wrap">
+                    <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/8tFzdIb5lso" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div className='subtitle'>🛠️ 개발 환경</div>
             <hr />
             <ul>
-                <li>ForntEnd</li>
+                <li className='devsetting'>ForntEnd</li>
                 <p>TypeScript, React.js, ReactQuery, Tailwind, PWA, Zustand</p>
-                <li>BackEnd</li>
+                <li className='devsetting'>BackEnd</li>
                 <p>Spring Boot, JPA, QueryDSL, Spring Cloud Config,Spring Security</p>
-                <li>AI</li>
+                <li className='devsetting'>AI</li>
                 <p>FastText, FastAPI, KoNLPy</p>
-                <li>InfraStructor</li>
+                <li className='devsetting'>InfraStructor</li>
                 <p>AWS, Nginx, Docker, Jenkins</p>
-                <li>Authencation</li>
+                <li className='devsetting'>Authencation</li>
                 <p>JWT, Redis</p>
-                <li>Collaborate</li>
+                <li className='devsetting'>Collaborate</li>
                 <p>GitLab, Jira, Figma, Notion</p>
-                <li>ECT</li>
+                <li className='devsetting'>ECT</li>
                 <p>Kakao Map API, Naver Clova OCR, Naver Cloud Platform SMS</p>
             </ul>
             <div className='subtitle'>💡 프로젝트 주요기능</div>

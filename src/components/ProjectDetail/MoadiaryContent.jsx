@@ -11,6 +11,7 @@ import award from '../../assets/moadiary/award.jpg';
 import team from '../../assets/moadiary/team.jpg';
 import completion from '../../assets/moadiary/completion.jpg'
 import shinhan from '../../assets/moadiary/shinhan.jpg'
+import { FaGithub } from "react-icons/fa";
 
 const MoadiaryContent = () => {
     const settings = {
@@ -23,20 +24,27 @@ const MoadiaryContent = () => {
     return (
         <div className='project'>
             <div className='project_title'>모아일기</div>
-            <div>2023.9.01~2023.9.17 (2주) </div>
-            <div>팀 프로젝트(BE 2, FE 2)</div>
-            <div>프론트엔드 개발</div>
+            <div className='subtitle'>2023.9.01~2023.9.17 (2주) </div>
+            <div className='subtitle'>팀 프로젝트(BE 2, FE 2)</div>
+            <div className='subtitle'>프론트엔드 개발</div>
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
             
-            <a href="https://github.com/ksungjoon/IJoah"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/IJoah">
+                <div className='githublink'>    
+                    <FaGithub/>
+                    Github URL(자세한 내용)
+                </div>
+            </a>
             <div className='summary'>
                 핀테크 연결과 확장을 주제로 용돈기입과 일기를 한번에 작성할 수 있는 아이 친화적인 UI를 제공하는 웹앱 애플리케이션
             </div>
             <div className='subtitle'>🏆 수상</div>
             <hr />
-            <div>신한 해커톤 프로젝트 우수상</div>
+            <div className='award'>
+                <div>신한 해커톤 프로젝트 우수상</div>
+            </div>
             <div className='center'>
                 <div className='slide'>
                     <Slider {...settings}>
@@ -52,37 +60,25 @@ const MoadiaryContent = () => {
                     </Slider>
                 </div>
             </div>
-            <div className='subtitle'>💻 서비스 화면</div>
+            <div className='subtitle'>💻 기능 설명 영상 </div>
             <hr />
-            <div className='center'>
-                <div className='slide'>
-                    <Slider {...settings}>
-                        
-                            <img src={img1} className='imgdiv'/>
-                       
-                      
-                            <img src={img2} className='imgdiv'/>
-                        
-                        
-                            <img src={img3} className='imgdiv'/>
-                        
-                    </Slider>
+                <div class="video-wrap">
+                    <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/7FfZwziEPnw" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>
             <div className='subtitle'>🛠️ 개발 환경</div>
             <hr />
             <ul>
-                <li>ForntEnd</li>
+                <li className='devsetting'>ForntEnd</li>
                 <p>TypeScript, React.js, Tailwind, Styled-Components, PWA, Zustand</p>
-                <li>BackEnd</li>
+                <li className='devsetting'>BackEnd</li>
                 <p>Spring Boot, JPA, QueryDSL, Spring Security</p>
-                <li>AI</li>
+                <li className='devsetting'>AI</li>
                 <p>FastText, FastAPI, KoNLPy</p>
-                <li>InfraStructor</li>
+                <li className='devsetting'>InfraStructor</li>
                 <p>AWS, Nginx, Docker, Jenkins</p>
-                <li>Authencation</li>
+                <li className='devsetting'>Authencation</li>
                 <p>Redis</p>
-                <li>Collaborate</li>
+                <li className='devsetting'>Collaborate</li>
                 <p>GitHub, Figma, Notion</p>
             </ul>
             <div className='subtitle'>💡 프로젝트 주요기능</div>

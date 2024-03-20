@@ -3,10 +3,13 @@ import './projectdetail.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import img1 from '../../assets/eoulimv2/eoulimv2img1.png';
-import img2 from '../../assets/eoulimv2/eoulimv2img2.png';
-import img3 from '../../assets/eoulimv2/eoulimv2img3.png';
+import img1 from '../../assets/aurora/aurora1.png';
+import img2 from '../../assets/aurora/aurora2.png';
+import img3 from '../../assets/aurora/aurora3.png';
+import img4 from '../../assets/aurora/aurora4.png';
+import img5 from '../../assets/aurora/aurora5.png';
 import mainimg from '../../assets/aurora/auroramain.png';
+import { FaGithub } from "react-icons/fa";
 
 const Aourora = () => {
     const settings = {
@@ -20,13 +23,18 @@ const Aourora = () => {
     return (
         <div className='project'>
             <div className='project_title'>오로라</div>
-            <div>2023.05.17~2023.05.25 (1주) </div>
-            <div>팀 프로젝트(Full-Stack 2)</div>
-            <div>프론트엔드 개발, 백엔드 개발</div>
+            <div className='subtitle'>2023.05.17~2023.05.25 (1주) </div>
+            <div className='subtitle'>팀 프로젝트(Full-Stack 2)</div>
+            <div className='subtitle'>프론트엔드 개발, 백엔드 개발</div>
             <div className='center'>
                 <img src={mainimg} className='mainimg' />
             </div>
-            <a href="https://github.com/ksungjoon/Aurora"><div>Github URL(자세한 내용)</div></a>
+            <a href="https://github.com/ksungjoon/Aurora">
+                <div className='githublink'>    
+                    <FaGithub/>
+                    Github URL(자세한 내용)
+                </div>
+            </a>
             <div className='summary'>
                 사용자가 좋아하는 영화와 시청한 영화를 기반으로 영화를 추천해주는 영화 추천 플랫폼
             </div>
@@ -44,17 +52,22 @@ const Aourora = () => {
                         
                             <img src={img3} className='imgdiv'/>
                         
+
+                            <img src={img4} className='imgdiv'/>
+
+
+                            <img src={img5} className='imgdiv'/>
                     </Slider>
                 </div>
             </div>
             <div className='subtitle'>🛠️ 개발 환경</div>
             <hr />
             <ul>
-                <li>ForntEnd</li>
+                <li className='devsetting'>ForntEnd</li>
                 <p>Vue.js, HTML5, CSS, JavaScript, Bootstrap </p>
-                <li>BackEnd</li>
+                <li className='devsetting'>BackEnd</li>
                 <p>Python, Django</p>
-                <li>Collaborate</li>
+                <li className='devsetting'>Collaborate</li>
                 <p>GitHub</p>
             </ul>
             <div className='subtitle'>💡 프로젝트 주요기능</div>

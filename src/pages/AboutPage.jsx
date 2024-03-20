@@ -1,8 +1,22 @@
 import React from 'react';
 import './AboutPage.css'
 import AboutImage from '../components/AboutImage';
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { LuCopy } from "react-icons/lu";
 
 const AboutPage = () => {
+    const handleCopyClick = (textToCopy) => {
+        navigator.clipboard.writeText(textToCopy)
+          .then(() => {
+            alert('텍스트가 복사되었습니다.');
+          })
+          .catch((error) => {
+            console.error('복사 실패:', error);
+          });
+      };
+      
     return (
         <div className='AboutPagebody'>
             <div>
@@ -14,7 +28,7 @@ const AboutPage = () => {
                 <div className='myskill'>My SKill</div>
                 <div className='stack_container'>
                     <div className='stack_title'>Frontend</div>
-                    <div>
+                    <div className='stack_lists'>
                         <li className='stack_list'>HTML, CSS, JavaScript</li>
                         <li className='stack_list'>React.js</li>
                         <li className='stack_list'>React Query</li>
@@ -29,7 +43,7 @@ const AboutPage = () => {
                 </div>
                 <div className='stack_container'>
                     <div className='stack_title'>Mobile</div>
-                    <div>
+                    <div className='stack_lists'>
                         <li className='stack_list'>Flutter</li>
                     
                     </div>
@@ -43,7 +57,7 @@ const AboutPage = () => {
                 </div>
                 <div className='stack_container'>
                     <div className='stack_title'>Version_Control</div>
-                    <div>
+                    <div className='stack_lists'>
                         <li className='stack_list'>Git</li>
                         <li className='stack_list'>GitHub</li>
                         <li className='stack_list'>GitLab</li>
@@ -51,7 +65,7 @@ const AboutPage = () => {
                 </div>
                 <div className='stack_container'>
                     <div className='stack_title'>Communication</div>
-                    <div>
+                    <div className='stack_lists'>
                         <li className='stack_list'>Jira</li>
                         <li className='stack_list'>Figma</li>
                     </div>
@@ -60,31 +74,59 @@ const AboutPage = () => {
                 <br />
                 <br />
                 <div className='stack_title'>Frontend Engineering</div>
-                <div>
-                    <li className='stack_list'>5개의 팀 프로젝트 개발 경험(팀원6명 X 3,팀원4명 X 1명,팀원2명 X 1)</li>
-                    <li className='stack_list'>Jira</li>
-                    <li className='stack_list'>Jira</li>
-                    <li className='stack_list'>Jira</li>
+                <div className='stack_lists'>
+                    <li className='stack_list'>5개의 팀 프로젝트 개발 경험 ( 팀원6명 X 3, 팀원4명 X 1명, 팀원2명 X 1 )</li>
+                    <li className='stack_list'>React와 TypeScirpt를 활용한  개발 경험</li>
+                    <li className='stack_list'>Flutter를 활용한 모바일 개발 경험</li>
+                    <li className='stack_list'>Recoil, Zustand, GetX를 활용한 상태 관리 경험</li>
+                    <li className='stack_list'>React Query를 활용하여 인피니트 스크롤 구현 경험</li>
+                    <li className='stack_list'>axios를 활용한 서버 통신 기능 구현</li>
+                    <li className='stack_list'>모든 기기를 충족시키기는 반응형 CSS 구현 경험</li>
                 </div>
-                <div className='stack_title'>Software Engineering</div>
-                <div>
+                <br />
+                <br />
+                <br />
+                <div className='stack_title'>Software Developement</div>
+                <div className='stack_lists'>
                     <li className='stack_list'>애자일한 개발 경험, 유저 피드백을 이용해 기능 추가해 배포 후 업데이트 진행 경험</li>
-                    <li className='stack_list'>실제 학교에 방문하여 개발한 Software를 사용하게하고 피드백 수용경험</li>
-                    <li className='stack_list'>Jira</li>
-                    <li className='stack_list'>Jira</li>
+                    <li className='stack_list'>실제 학교에 방문하여 개발한 Software를 사용하게하고 피드백 수용 경험</li>
+                    <li className='stack_list'>Jira를 이용해 프로젝트 관리, Github, Gitlab 사용 경험</li>
                 </div>
+                <br />
+                <br />
+                <br />
                 <div className='stack_title'>Backend Engineering</div>
-                <div>
-                    <li className='stack_list'>D_jango를 활용하여 프로젝트를 통해 백엔드 개발 경험</li>
+                <div className='stack_lists'>
+                    <li className='stack_list'>D_jango를 활용해 영화 추천 프로젝트 백엔드 개발 경험</li>
                 </div>
+                <br />
+                <br />
+                <br />
             </div>
             <div>
                 <AboutImage/>
-                <div>GitHub</div>
-                <div>Instagram</div>
+                
+                <div className='contactme'>
+                    <a href="https://github.com/ksungjoon">
+                        <FaGithub/>
+                    </a>
+                    <a href="https://www.instagram.com/k.sung_joon/">
+                        <FaInstagram/>
+                    </a>
+                </div>
                 <hr />
-                <div>gkxm0443@naver.com</div>
-                <div>이력서 다운</div>
+                <div className='email'>
+                    <MdEmail/>
+                    <div>
+                        gkxm0443@naver.com
+                    </div> 
+                </div>
+                <div className='emailclick' onClick={()=>handleCopyClick('gkxm0443@naver.com')}>
+                    <LuCopy/>
+                    <div>
+                        이메일 주소 복사하기
+                    </div>
+                </div>
             </div>
         </div>
     );
