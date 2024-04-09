@@ -55,7 +55,7 @@ const ExperiencesPage = () => {
                     <ul className="TimelineList">
                         <li className="TimelineItemContainer">
                         <div className="TimelineItem">
-                            <span className="Date">2023년 9월 17일</span>
+                            <span className="Date">2023년 10월 06일</span>
                             <h3 className="TimelineTitle">2023 삼성 청년 SW 아카데미 특화 프로젝트 우수상</h3>
                             <p className="TimelineContents">
                             [2학기] 특화 프로젝트 광주 2반 1등
@@ -79,7 +79,7 @@ const ExperiencesPage = () => {
 
                         <li className="TimelineItemContainer">
                         <div className="TimelineItem">
-                            <span className="Date">2023년 9월 17일</span>
+                            <span className="Date">2023년 8월 18일</span>
                             <h3 className="TimelineTitle">2023 삼성 청년 SW 아카데미 공통 프로젝트 우수상</h3>
                             <p className="TimelineContents">
                             [2학기] 공통 프로젝트 광주 2반 1등
@@ -96,7 +96,7 @@ const ExperiencesPage = () => {
                     <ul className="TimelineList">
                         <li className="TimelineItemContainer">
                         <div className="TimelineItem">
-                            <span className="Date">2023년 9월 17일</span>
+                            <span className="Date">2023년 3월 24일</span>
                             <h3 className="TimelineTitle">데이터분석[준전문가](ADsP)</h3>
                             <p className="TimelineContents">
                             데이터 이해에 대한 기본지식을 바탕으로 데이터분석 기획 및 데이터분석 등의 직무 수행 역량
