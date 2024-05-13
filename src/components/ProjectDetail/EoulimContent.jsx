@@ -91,7 +91,7 @@ const EoulimContent = () => {
                 <li>Figma를 사용하여 아이들의 사용성을 고려한 hi-fi 프로토타입 구현.</li>
                 <li>React와 TypeScript를 활용한 구현</li>
                     <ul>
-                        <li>로그인,메인,녹화,친구페이지 드으이 기능을 React 및 TypeScript로 구현</li>
+                        <li>로그인,메인,녹화,친구페이지 등의 기능을 React 및 TypeScript로 구현</li>
                         <li>Axios를 이용한 서버와의 통신 기능 구현</li>
                         <li>Styled-Components를 활용하여 CSS 적용</li>
                     </ul>
@@ -109,7 +109,7 @@ const EoulimContent = () => {
                     </ul>
                 <li>토큰 관리와 예외 처리</li>
                     <ul>
-                        <li>유저의 토큰이 없거나 만료되었을 대 로그인 화면으로 이동하는 예외처리 구현</li>
+                        <li>유저의 토큰이 없거나 만료되었을 때 로그인 화면으로 이동하는 예외처리 구현</li>
                     </ul>
             </ul>
         </div>

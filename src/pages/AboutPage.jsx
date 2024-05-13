@@ -98,6 +98,7 @@ const AboutPage = () => {
                 <div className='stack_title'>Backend Engineering</div>
                 <div className='stack_lists'>
                     <li className='stack_list'>D_jango를 활용해 영화 추천 프로젝트 백엔드 개발 경험</li>
+                    <li className='stack_list'>서비스 데이터 베이스 설계 및 개발</li>
                 </div>
                 <br />
                 <br />
